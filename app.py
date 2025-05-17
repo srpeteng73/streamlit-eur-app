@@ -410,6 +410,7 @@ plt.show()
 import matplotlib.pyplot as plt
 
 # Plot a single well's production profile
+st.write("Columns in well_data:", well_data.columns.tolist())
 plt.plot(well_data['Production_Profile'].iloc[0]) # Changed df to well_data
 plt.title(f"Simulated Monthly Oil Production - Well: {well_data['Well_ID'].iloc[0]}")
 plt.xlabel("Month")
